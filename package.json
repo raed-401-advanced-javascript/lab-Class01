@@ -1,26 +1,30 @@
 {
-  "name": "lab-class01",
+  "name": "lab-Class01",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "test": "jest --verbose --coverage",
-    "lint": "eslint '**/*.js'"
+    "lint" : "eslint '**/*.js'",
+    "start" : "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raed-401-advanced-javascript/lab-Class01.git"
   },
-  "author": "raed",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/raed-401-advanced-javascript/lab-Class01/issues"
   },
   "homepage": "https://github.com/raed-401-advanced-javascript/lab-Class01#readme",
   "dependencies": {
-    "eslint": "^6.1.0",
-    "eslint-plugin-react": "^7.14.3",
-    "jest": "^24.8.0"
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.0",
+    "jest": "^25.1.0"
   }
-
 }
