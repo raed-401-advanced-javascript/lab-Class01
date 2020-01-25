@@ -13,7 +13,7 @@ describe('validator module performs basic validation of', () => {
   let bool = false;
 
   it('strings', () => {
-    let tester = [num,arr,obj,func,bool]
+    let tester = [num,arr,obj,func,bool];
     for(let i=0;i<tester.length;i++){
       expect(validator.isString(tester[i])).toBeFalsy();
     }
@@ -44,12 +44,12 @@ describe('validator module performs basic validation of', () => {
 
 describe('validator module performs complex validations', () => {
   let object_sample = {
-   a:5,
-   b:'play',
-   c:[1,2,3],
-   d: true,
-   e:{g:'good',d:'khristian best TA'}
-  }
+    a:5,
+    b:'play',
+    c:[1,2,3],
+    d: true,
+    e:{g:'good',d:'khristian best TA'},
+  };
 
   it('validates the presence of required object properties at any level', () => {
     // i.e. does person.hair.color exist and have a good value, not just person.hair
@@ -71,10 +71,10 @@ describe('validator module performs complex validations', () => {
     expect(validator.isBollean(object_sample.d)).toBeTruthy();
   });
   it('check if the key exsist',()=>{
-    let test = "e"
-    expect(Object.keys(object_sample).includes(test)).toBeTruthy()
+    let test = 'e';
+    expect(Object.keys(object_sample).includes(test)).toBeTruthy();
 
-  })
+  });
 
   // TODO: Cover so, so many more cases
 
